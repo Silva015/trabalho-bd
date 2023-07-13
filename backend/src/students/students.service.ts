@@ -30,6 +30,14 @@ export class StudentsService {
     return res.rows[0];
   }
 
+  async findOneByEmailAndPassword(email: string, password: string) {
+    // return `This action returns a;
+    const res = await this.knex.raw(
+      `SELECT * FROM students WHERE email = '${email}' AND password = '${password}';`,
+    );
+    return res.rows[0];
+  }
+
   update(id: number, updateStudentDto: UpdateStudentDto) {
     // return `This action updates a #${id} student`;
     return this.knex.raw(

@@ -43,8 +43,10 @@ export default function Home() {
               Ver todos os alunos
             </a>
           </div>
-          <div className="bg-slate-100 shadow-md rounded-md px-4 py-3">
-            Components
+          <div className="bg-slate-100 shadow-md rounded-md px-4 py-3 hover:bg-gray-300">
+            <a className="px-4 py-3" href="./login">
+              Login
+            </a>
           </div>
           <div className="bg-slate-100 shadow-md rounded-md px-4 py-3">
             Contact

@@ -30,6 +30,15 @@ export class StudentsController {
     return this.studentsService.findOne(+id);
   }
 
+  // get student by email and password
+  @Get(':email/:password')
+  findOneByEmailAndPassword(
+    @Param('email') email: string,
+    @Param('password') password: string,
+  ) {
+    return this.studentsService.findOneByEmailAndPassword(email, password);
+  }
+
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateStudentDto: UpdateStudentDto) {
     return this.studentsService.update(+id, updateStudentDto);
