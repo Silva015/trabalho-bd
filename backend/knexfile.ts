@@ -8,8 +8,8 @@ const config: { [key: string]: Knex.Config } = {
     client: 'pg',
     connection: {
       host: 'localhost',
-      user: 'arthurcarneiro',
-      password: 'tutu',
+      user: 'postgres',
+      password: 'postgres',
       database: 'BD',
       charset: 'utf8',
     },
