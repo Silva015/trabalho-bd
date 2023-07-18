@@ -18,8 +18,8 @@ import { ComplaintsModule } from './complaints/complaints.module';
         useNullAsDefault: true,
         connection: {
           host: 'localhost',
-          user: 'arthurcarneiro',
-          password: 'tutu',
+          user: 'postgres',
+          password: 'postgres',
           database: 'BD',
           charset: 'utf8',
         },
